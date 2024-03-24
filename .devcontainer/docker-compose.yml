@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  markdown:
+    container_name: markdown
+    build:
+      context: .
+    tty: true # 常駐プログラムがない場合にコンテナがすぐ終了してしまうのを防ぐための設定（参照：https://kaki-note-02.netlify.app/2022/04/07/）
+    volumes:
+      - ./workspace:/devcontainer/workspace
+    ports:
+      - 8080:8080

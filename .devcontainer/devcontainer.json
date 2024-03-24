@@ -1,0 +1,20 @@
+{
+	"name": "markdown",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "markdown",
+	"workspaceFolder": "/devcontainer/workspace",
+	// stopComposeはデフォルト設定（参照：https://containers.dev/implementors/json_reference/#:~:text=stopCompose%20(default%20for%20Docker%20Compose).）
+	"shutdownAction": "stopCompose",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"taichi.vscode-textlint",
+				"DavidAnson.vscode-markdownlint",
+				"yzhang.markdown-all-in-one",
+				"esbenp.prettier-vscode",
+				"ryokat3.vscode-qiita-markdown-preview",
+				"wayou.vscode-todo-highlight"
+			]
+		}
+	}
+}
